@@ -5,6 +5,7 @@ public class SingleLinkedList {
     public Node tail;
     public int size;
 
+    //Create createSingleLinkedList
     public Node createSingleLinkedList(int valueNode) {
         head = new Node();
         Node node = new Node();
