@@ -1,4 +1,4 @@
-package com.awsravi.data_structures_algorithams_java.arrays;
+package com.awsravi.data_structures_algorithams_java.array;
 
 public class TwoDimensionalArray {
 
@@ -12,6 +12,18 @@ public class TwoDimensionalArray {
                 arr[row][col] = Integer.MIN_VALUE;
             }
         }
+    }
+
+    public static void main(String[] args) {
+
+        TwoDimensionalArray twoDimensionalArray = new TwoDimensionalArray(3, 3);
+        twoDimensionalArray.insertValueInTheArray(1, 1, 1);
+        twoDimensionalArray.insertValueInTheArray(2, 2, 2);
+
+        twoDimensionalArray.accessCell(1, 1);
+        twoDimensionalArray.traverse2DArray();
+        twoDimensionalArray.searchingValue(1);
+        twoDimensionalArray.deleteValuefromArray(1, 1);
     }
 
     // Inserting value in the Array
@@ -29,6 +41,8 @@ public class TwoDimensionalArray {
         }
     }
 
+    // Traverse 2D array
+
     // Accessing cell value from given array
     public void accessCell(int row, int col) {
         System.out.println("\nAccessing Row#" + row + ", Col#" + col);
@@ -40,11 +54,9 @@ public class TwoDimensionalArray {
         }
     }
 
-    // Traverse 2D array
-
     public void traverse2DArray() {
-        for (int row=0; row < arr.length; row++) {
-            for (int col=0; col < arr[0].length; col++) {
+        for (int row = 0; row < arr.length; row++) {
+            for (int col = 0; col < arr[0].length; col++) {
                 System.out.print(arr[row][col] + "  ");
             }
             System.out.println();
@@ -53,10 +65,10 @@ public class TwoDimensionalArray {
 
     // Searching a single value from the Array
     public void searchingValue(int value) {
-        for (int row=0; row<arr.length; row++){
-            for (int col=0; col<arr[0].length; col++) {
+        for (int row = 0; row < arr.length; row++) {
+            for (int col = 0; col < arr[0].length; col++) {
                 if (arr[row][col] == value) {
-                    System.out.println("Value is found at row: "+ row + " Col: " + col);
+                    System.out.println("Value is found at row: " + row + " Col: " + col);
                     return;
                 }
             }
@@ -73,18 +85,5 @@ public class TwoDimensionalArray {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("This index is not valid for array");
         }
-    }
-
-
-    public static void main(String[] args) {
-
-        TwoDimensionalArray twoDimensionalArray = new TwoDimensionalArray(3, 3);
-    twoDimensionalArray.insertValueInTheArray(1, 1, 1);
-    twoDimensionalArray.insertValueInTheArray(2, 2, 2);
-
-    twoDimensionalArray.accessCell(1, 1);
-    twoDimensionalArray.traverse2DArray();
-    twoDimensionalArray.searchingValue(1);
-    twoDimensionalArray.deleteValuefromArray(1, 1);
     }
 }

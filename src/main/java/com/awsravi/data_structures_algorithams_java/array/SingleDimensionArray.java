@@ -1,8 +1,17 @@
-package com.awsravi.data_structures_algorithams_java.arrays;
+package com.awsravi.data_structures_algorithams_java.array;
 
 public class SingleDimensionArray {
 
     int[] arr = null;
+
+    public static void main(String[] args) {
+        SingleDimensionArray singleDimensionArray = new SingleDimensionArray();
+        singleDimensionArray.singleDimensionArray(3);
+        singleDimensionArray.insert(1, 2);
+        singleDimensionArray.traverseArray();
+        singleDimensionArray.searchInArray(2);
+        singleDimensionArray.deleteValue(1);
+    }
 
     public void singleDimensionArray(int sizeOfArray) {
         arr = new int[sizeOfArray];
@@ -10,8 +19,10 @@ public class SingleDimensionArray {
             arr[i] = Integer.MIN_VALUE;
         }
         System.out.println(arr.length);
-       // System.out.println(arr[0]);
+        // System.out.println(arr[0]);
     }
+
+    // Array Traversal
 
     public void insert(int location, int valueToBeInserted) {
         try {
@@ -25,8 +36,6 @@ public class SingleDimensionArray {
             System.out.println("Invalid index to access array!");
         }
     }
-
-    // Array Traversal
 
     public void traverseArray() {
         try {
@@ -61,14 +70,5 @@ public class SingleDimensionArray {
             System.out.println("The value that is provided is not in the range of array");
 
         }
-    }
-
-    public static void main(String[] args) {
-        SingleDimensionArray singleDimensionArray = new SingleDimensionArray();
-        singleDimensionArray.singleDimensionArray(3);
-        singleDimensionArray.insert(1,2);
-        singleDimensionArray.traverseArray();
-        singleDimensionArray.searchInArray(2);
-        singleDimensionArray.deleteValue(1);
     }
 }
