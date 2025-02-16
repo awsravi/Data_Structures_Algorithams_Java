@@ -69,7 +69,7 @@ public class DoublyLinkedList {
         System.out.println("\n");
     }
 
-    //Traversal Reverse Traversal DoublyLinkedList
+    // Reverse Traversal DoublyLinkedList
     public void reverseTraversalDoublyLinkedList() {
         if (head != null) {
             DoublyNode tempNode = tail;
