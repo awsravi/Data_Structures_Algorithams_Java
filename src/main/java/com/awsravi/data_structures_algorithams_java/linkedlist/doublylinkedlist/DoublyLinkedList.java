@@ -84,6 +84,21 @@ public class DoublyLinkedList {
             System.out.println("Nothing to reverse");
         }
         System.out.println("\n");
+    }
 
+    //Search Node DoublyLinkedList
+    public boolean searchDoublyLinkedList(int nodeValue) {
+        if (head != null) {
+            DoublyNode tempNode = head;
+            for (int i = 0; i < size; i++) {
+                if (tempNode.value == nodeValue) {
+                    System.out.print("The Node is Found at location : " + i);
+                    return true;
+                }
+                tempNode = tempNode.next;
+            }
+        }
+        System.out.print("Nothing to search");
+        return false;
     }
 }

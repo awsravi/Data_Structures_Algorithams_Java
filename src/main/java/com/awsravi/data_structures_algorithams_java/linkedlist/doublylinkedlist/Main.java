@@ -21,5 +21,9 @@ public class Main {
 
         // Reverse Traversal DoublyLinkedList
         dLL.reverseTraversalDoublyLinkedList();
+
+        //Search Method DoublyLinkedList
+        dLL.searchDoublyLinkedList(4);
+
     }
 }
