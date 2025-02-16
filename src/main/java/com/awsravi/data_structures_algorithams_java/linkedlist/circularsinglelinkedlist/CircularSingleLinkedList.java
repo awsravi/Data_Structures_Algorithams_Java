@@ -1,6 +1,6 @@
-package com.awsravi.data_structures_algorithams_java.linkedlist.circularlinkedlist;
+package com.awsravi.data_structures_algorithams_java.linkedlist.circularsinglelinkedlist;
 
-public class CircularLinkedList {
+public class CircularSingleLinkedList {
 
     public Node head;
     public Node tail;

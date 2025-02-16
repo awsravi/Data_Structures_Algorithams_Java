@@ -1,9 +1,9 @@
-package com.awsravi.data_structures_algorithams_java.linkedlist.circularlinkedlist;
+package com.awsravi.data_structures_algorithams_java.linkedlist.circularsinglelinkedlist;
 
 public class Main {
     public static void main(String[] args) {
 
-        CircularLinkedList circularLinkedList = new CircularLinkedList();
+        CircularSingleLinkedList circularLinkedList = new CircularSingleLinkedList();
         circularLinkedList.createCircularLinkedList(4);
         // System.out.println("Create Circular Linked List: " + circularLinkedList.head.value);
         // System.out.println("Circular Linked List: " + circularLinkedList.head.next.value);
