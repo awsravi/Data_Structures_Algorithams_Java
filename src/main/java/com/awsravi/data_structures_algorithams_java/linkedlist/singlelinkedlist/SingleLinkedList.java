@@ -9,8 +9,8 @@ public class SingleLinkedList {
     public Node createSingleLinkedList(int valueNode) {
         head = new Node();
         Node node = new Node();
-        node.next = null;
         node.value = valueNode;
+        node.next = null;
         head = node;
         tail = node;
         size = 1;
