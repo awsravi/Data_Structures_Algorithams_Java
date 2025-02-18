@@ -28,6 +28,16 @@ public class Stack_UsingArray {
         return false;
     }
 
+    //isFull
+    public boolean fullStack() {
+        if (topOfStack == arr.length + 1) {
+            System.out.println("The Stack is fullStack");
+            return true;
+        }
+        System.out.println("The Stack is not fullStack");
+        return false;
+    }
+
     // Push Method
     public void push(int value) {
         if (isFull()) {

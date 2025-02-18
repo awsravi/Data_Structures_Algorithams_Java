@@ -11,13 +11,13 @@ public class Main {
         System.out.println(r);
 
         int delete = newStack.pop();
-        System.out.println(delete);
+        System.out.println("pop : " + delete);
 
         int r2 = newStack.peek();
-        System.out.println(r2);
+        System.out.println("peek : " + r2);
         int r3 = newStack.peek();
-        System.out.println(r3);
-        
+        System.out.println("peek : " + r3);
+
         newStack.deleteStack();
 
     }

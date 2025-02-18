@@ -8,7 +8,10 @@ public class Main {
         System.out.println(result);
 
         boolean full = newStack.isFull();
-        System.out.println(full);
+        System.out.println("isFull : " + full);
+
+        boolean fullStack = newStack.fullStack();
+        System.out.println("fullStack : " + fullStack);
 
         newStack.push(1);
         newStack.push(2);

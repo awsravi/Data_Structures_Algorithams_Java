@@ -12,6 +12,18 @@ public class QueueArray {
         System.out.println("The Queue is created successfully with size of : " + size);
     }
 
+    public void display() {
+        if (beginningOfQueue == -1 || beginningOfQueue > topOfQueue) {
+            System.out.println("Queue is empty");
+        } else {
+            System.out.print("Queue elements: ");
+            for (int i = beginningOfQueue; i <= topOfQueue; i++) {
+                System.out.print(array[i] + " ");
+            }
+            System.out.println();
+        }
+    }
+
     public boolean isFull() {
         if (topOfQueue == array.length - 1) {
             System.out.println("The queue is Full");
@@ -39,16 +51,15 @@ public class QueueArray {
             beginningOfQueue = 0;
             topOfQueue++;
             array[topOfQueue] = value;
-            System.out.println("TSuccessfully added value to the queue : " + value);
+            System.out.println("Successfully added value to the queue : " + value);
 
         } else {
             topOfQueue++;
             array[topOfQueue] = value;
-            System.out.println("TSuccessfully added value to the queue : " + value);
+            System.out.println("Successfully added value to the queue : " + value);
 
         }
     }
-
 
     public int dequeue() {
         if (isEmpty()) {
