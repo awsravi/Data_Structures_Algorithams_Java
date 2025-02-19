@@ -3,7 +3,7 @@ package com.awsravi.data_structures_algorithams_java.tree.binarytree;
 public class Main {
     public static void main(String[] args) {
         BinaryTreeLinkedList binaryTreeLinkedList = new BinaryTreeLinkedList();
-        System.out.println("Successfully Created BinariLinkedList Tree Started! :  " + binaryTreeLinkedList.hashCode());
+        System.out.println("Successfully Created BinaryLinkedList Tree Started! :  " + binaryTreeLinkedList.hashCode());
 
         BinaryNode n1 = new BinaryNode();
         n1.value = "N1";
@@ -59,6 +59,6 @@ public class Main {
         binaryTreeLinkedList.deleteEntireNode();
 
         //binaryTreeLinkedList.levelOrder();
-        System.out.println("BinariLinkedList Tree Basics Completed :  " + binaryTreeLinkedList.hashCode());
+        System.out.println("BinaryLinkedList Tree Basics Completed :  " + binaryTreeLinkedList.hashCode());
     }
 }
