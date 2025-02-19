@@ -1,4 +1,4 @@
-package com.awsravi.data_structures_algorithams_java.tree.binarytree;
+package com.awsravi.data_structures_algorithams_java.tree.binarytreelinkedlist;
 
 public class BinaryNode {
     public String value;

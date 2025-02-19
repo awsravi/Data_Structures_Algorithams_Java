@@ -1,4 +1,4 @@
-package com.awsravi.data_structures_algorithams_java.tree.binarytree;
+package com.awsravi.data_structures_algorithams_java.tree.binarytreelinkedlist;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -170,7 +170,7 @@ public class BinaryTreeLinkedList {
     public void deleteEntireNode() {
         root = null;
         System.out.println("Deleted Node At Root Level");
-        
+
     }
 }
 
