@@ -1,4 +1,4 @@
-package com.awsravi.data_structures_algorithams_java.tree.binarytree.array;
+package com.awsravi.data_structures_algorithams_java.tree.binarytreearray;
 
 public class Main {
     public static void main(String[] args) {
