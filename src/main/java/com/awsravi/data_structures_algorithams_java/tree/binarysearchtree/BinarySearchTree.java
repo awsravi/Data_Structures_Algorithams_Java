@@ -35,7 +35,6 @@ public class BinarySearchTree {
         }
     }
 
-
     // PreOrder Traversal using BinarySearchTree
 
     void insert(int value) {
@@ -62,7 +61,7 @@ public class BinarySearchTree {
 
 
     }
-    
+
     // PostOrder Traversal using BinarySearchTree
     public void postOrder(BinaryNode node) {
         if (node == null) {
