@@ -1,4 +1,4 @@
-package com.awsravi.data_structures_algorithams_java.hashing;
+package com.awsravi.data_structures_algorithams_java.hashing.directchaining;
 
 import java.util.LinkedList;
 
