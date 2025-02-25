@@ -15,6 +15,9 @@ public class Main {
     Inner loop (j) → Compares adjacent elements and swaps them if needed.
     The biggest value in each iteration moves to the correct position at the end, reducing the number of comparisons needed.
      */
+     /*
+    Internal impl pls check NoteBook step by step
+     */
 
     public static void main(String[] args) {
 
