@@ -14,6 +14,9 @@ public class Main {
     Inner while loop shifts elements to the right to make space for the inserted element.
     This process repeats for all elements.
      */
+     /*
+    Internal impl pls check NoteBook step by step
+     */
 
     public static void main(String[] args) {
         int[] a = {8, 7, 3, 6, 2, 5, 3, 1};
