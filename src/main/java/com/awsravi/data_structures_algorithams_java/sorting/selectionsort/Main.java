@@ -14,6 +14,10 @@ public class Main {
     Swap it with the first element.
     Move to the next position and repeat the process until the array is sorted.
      */
+    /*
+    Internal impl pls check NoteBook step by step
+     */
+
     public static void main(String[] args) {
         int[] arr = {87, 45, 22, 56, 1, 61, 2};
         SelectionSort selectionSort = new SelectionSort();
