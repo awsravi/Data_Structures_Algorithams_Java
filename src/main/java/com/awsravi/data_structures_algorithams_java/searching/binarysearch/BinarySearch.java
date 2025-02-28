@@ -8,6 +8,7 @@ public class BinarySearch {
     Half of the remaining elements can be eliminated at a time, instead of eliminating them one by one
     Binary Search only works for sorted arrays.
      */
+    //https://www.programiz.com/dsa/binary-search
     public int binarySearch(int[] arr, int target) {
 
         int low = 0;

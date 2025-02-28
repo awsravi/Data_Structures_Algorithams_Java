@@ -17,6 +17,7 @@ public class Main {
     /*
     Internal impl pls check NoteBook step by step
      */
+    //https://www.programiz.com/dsa/selection-sort
 
     public static void main(String[] args) {
         int[] arr = {87, 45, 22, 56, 1, 61, 2};

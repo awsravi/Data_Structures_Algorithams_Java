@@ -14,6 +14,7 @@ public class Searching {
     If not found, return -1.
    Note : if any doubt check NoteBook.
      */
+    //https://www.programiz.com/dsa/linear-search
     public int linearSearch(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
