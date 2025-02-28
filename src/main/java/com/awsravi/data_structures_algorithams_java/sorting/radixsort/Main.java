@@ -1,7 +1,11 @@
 package com.awsravi.data_structures_algorithams_java.sorting.radixsort;
 
 public class Main {
+    /*
+    orts elements by processing individual digits or characters.
+    Efficient for sorting integers or strings.
 
+     */
     /*
     Radix Sort is a non-comparative, stable sorting algorithm that works by sorting numbers
     digit by digit, starting from the least significant digit (LSD) to the most significant
