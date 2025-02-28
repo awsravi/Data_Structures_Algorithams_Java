@@ -15,21 +15,21 @@ public class BinarySearch {
         int mid = (low + high) / 2;
 
         System.out.println("See : " + low + " " + mid + " " + high);
-        while (arr[mid] != target) {
+        while (arr[mid] != target && low <= high) {
             if (target < arr[mid]) {
                 high = mid - 1;
             } else {
                 low = mid + 1;
             }
             mid = (low + high) / 2;
-            if (arr[mid] == target) {
-                System.out.println("The element is found at the index: " + mid);
-                return mid;
-            } else {
-                System.out.println("The element " + target + " not found.");
-                return -1;
-            }
         }
-        return low;
+        if (arr[mid] == target) {
+            System.out.println("The element is found at the index: " + mid);
+            return mid;
+        } else {
+            System.out.println("The element " + target + " not found.");
+            return -1;
+        }
+
     }
 }
