@@ -1,0 +1,71 @@
+1)Middle Function
+  Write a function called middle that takes an array and returns a new array that contains all but the first and last elements.
+
+  myArray = [1, 2, 3, 4]
+  middle(myArray)  # [2,3].
+
+2)2D Arrays
+    Given 2D array calculate the sum of diagonal elements.
+
+    Example
+    myArray2D= {{1,2,3},{4,5,6},{7,8,9}};
+    sumDiagonalElements(myArray2D) # 15
+
+3)Best Score
+Given an array, write a function to get first, second best scores from the array and return it in new array.
+  Array may contain duplicates.
+
+  Example
+  myArray = {84,85,86,87,85,90,85,83,23,45,84,1,2,0}
+  firstSecond(myArray) // {90, 87}
+
+4)Missing Number
+  Write Java function called findMissingNumberInArray that takes an integer array containing n-1 unique elements from a range of 1 to n, with one missing number, and returns the missing number.
+
+  Example
+
+  myArray = {1,2,3,4,6}
+  findMissingNumberInArray(myArray, 6) // 5
+  Hint:
+  Use the formula (n * (n + 1)) / 2 which  calculates the sum of the first n natural numbers.
+
+5)Duplicate Number
+  Write a function which takes integer array as a parameter and returns a new integer array with unique elements. (remove duplicates)
+
+  Example
+
+  removeDuplicates({1, 1, 2, 2, 3, 4, 5})
+  Output : [1, 2, 3, 4, 5]
+
+6)
+Remove Duplicates from Sorted Array - LeetCode 26
+Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length. Do not allocate extra space for another array; you must do this by modifying the input array in-place with O(1) extra memory.
+
+Example:
+
+Input: nums = [1, 1, 2]
+Output: 2
+
+7)Best Time to Buy and Sell Stock - LeetCode 121
+  You are given an array prices where prices[i] is the price of a given stock on the ith day. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+
+  Example:
+
+  Input: prices = [7, 1, 5, 3, 6, 4]
+  Output: 5
+  Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+
+8)Two Sum - LeetCode 1
+  Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+  Examples
+
+  Input: nums = [2,7,11,15], target = 9
+  Output: [0,1]
+  Output: Because nums[0] + nums[1] == 9, we return [0, 1]
+
+
+  Input: nums = [3,2,4], target = 6
+  Output: [1,2]
+
+9)
