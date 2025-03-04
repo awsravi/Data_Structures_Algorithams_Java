@@ -1,0 +1,15 @@
+1)Implement Binary Tree
+  Create a basic binary tree data structure from scratch in Java, with functionalities to add and traverse elements. Focus: Understanding the structure of binary trees and basic tree operations.
+
+2)In-Order Traversal (Iterative)
+  Implement an iterative approach for in-order  traversals in a binary tree.  It involves using a stack to keep track of the nodes. This is because recursion inherently uses a call stack, and when converting to an iterative approach, we need to manage this stack explicitly.
+
+  inOrderTraversal: Recursively traverses the tree in in-order. It first visits the left child, then the current node, and finally the right child.
+
+3)Pre-Order Traversal (Iterative)
+  Implement an  iterative approach for  pre-order  traversal in a binary tree . It  involves using a stack to keep track of the nodes. This is because recursion inherently uses a call stack, and when converting to an iterative approach, we need to manage this stack explicitly.
+
+  preOrderTraversal: Recursively traverses the tree in pre-order. It first visits the current node, then the left child, and finally the right child.
+
+4)Post-Order Traversal (Iterative)
+  Implement an iterative approach for post-order traversals in a binary tree.  It involves using a stack to keep track of the nodes. This is because recursion inherently uses a call stack, and when converting to an iterative approach, we need to manage this stack explicitly. postOrderTraversal: Recursively traverses the tree in post-order. It first visits the left child, then the right child, and finally the current node.

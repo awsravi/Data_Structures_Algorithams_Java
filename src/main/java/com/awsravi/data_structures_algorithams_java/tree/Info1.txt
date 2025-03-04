@@ -1,0 +1,80 @@
+1)Route Between Nodes
+  Given a directed graph and two nodes (S and E), design an algorithm to find out whether there is a route from S to E.
+A -> E  => False
+
+E -> A  => True
+
+
+2)Minimal Tree
+  Given a sorted (increasing order) array with unique integer elements, write an algorithm to create a binary search tree with minimal height.
+
+
+3)Check Balanced
+  Implement a function to check if a binary tree is balanced. For the purposes of this question, a balanced tree is defined to be a tree such that the heights of the two subtrees of any node never differ by more than one.
+
+4)Validate BST
+  Implement a function to check if a binary tree is a Binary Search Tree.
+
+
+5)Successor
+  Write an algorithm to find the next node (i.e in-order successor) of given node in a binary search tree. You may assume that each node has a link to its parent.
+
+  Example
+
+  int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  TreeNode root = TreeNode.createMinimalBST(array);
+  TreeNode node = root.find(array[1]);
+  TreeNode next = Successor.inorderSucc(node);
+
+  // 3
+
+
+6)BuildOrder
+  You are given a list of projects and a list of dependencies (which is a list of pairs of projects, where the second project is dependent on the first project). All of a project's dependencies must be built before the project is. Find a build order that will allow the projects to be built. If there is no valid build order, return an error.
+
+  Example:
+
+   String[] projects = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
+      String[][] dependencies = {
+          {"a", "b"},
+          {"b", "c"},
+          {"a", "c"},
+          {"a", "c"},
+          {"d", "e"},
+          {"b", "d"},
+          {"e", "f"},
+          {"a", "f"},
+          {"h", "i"},
+          {"h", "j"},
+          {"i", "j"},
+          {"g", "j"}};
+      String[] buildOrder = BuildOrder.buildOrderWrapper(projects, dependencies);
+      if (buildOrder == null) {
+        System.out.println("Circular Dependency.");
+      } else {
+        for (String s : buildOrder) {
+          System.out.print(s);
+        }
+      }
+    }
+
+  // Output
+  aghbicdjef
+
+
+7)Find Common Ancestor
+  Design an algorithm and write code to find the first common ancestor of two nodes in a binary tree. Avoid storing additional nodes in a data structure. NOTE: This is not necessarily a binary search tree.
+
+  Example:
+
+      int[] array = {5, 3, 6, 1, 9, 11};
+      TreeNode root = new TreeNode(20);
+      for (int a : array) {
+        root.insertInOrder(a);
+      }
+      TreeNode n1 = root.find(1);
+      TreeNode n9 = root.find(9);
+      TreeNode ancestor = CommonAncestor.commonAncestor(root, n1, n9);
+      System.out.println(ancestor.data);
+
+  //5
