@@ -1,0 +1,11 @@
+1)Implement a Circular Singly Linked List
+  Create a circular singly linked list with methods to insert a new node at the beginning, end, and toString  to display the list.
+
+2)Delete a Node from a Circular Singly Linked List
+  Implement a method in the CircularLinkedList class to delete a node by value.
+
+3)Count the Number of Nodes
+  Add a method to count the number of nodes in the circular singly linked list.
+
+
+4)

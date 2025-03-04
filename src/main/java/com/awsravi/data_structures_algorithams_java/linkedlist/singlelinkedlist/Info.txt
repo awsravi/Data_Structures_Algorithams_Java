@@ -1,0 +1,166 @@
+1)Implement a Circular Singly Linked List
+  Create a circular singly linked list with methods to insert a new node at the beginning, end, and toString  to display the list.
+
+2)Delete a Node from a Circular Singly Linked List
+  Implement a method in the CircularLinkedList class to delete a node by value.
+
+3)Count the Number of Nodes
+  Add a method to count the number of nodes in the circular singly linked list.
+
+4)Singly Linked List - Push
+  Implement the following on the SinglyLinkedList class:
+
+  push
+
+  This function should take in a value and add o node to the end of the SinglyLinkedList.
+
+  Examples
+
+  SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
+  singlyLinkedList.push(5)  // Success
+  singlyLinkedList.size   // 1
+  singlyLinkedList.head.value // 5
+  singlyLinkedList.tail.value // 5
+
+  singlyLinkedList.push(10)    // Success
+  singlyLinkedList.size      // 2
+  singlyLinkedList.head.value    // 5
+  singlyLinkedList.head.next.value  // 10
+  singlyLinkedList.tail.value    // 10
+
+5)Singly Linked List - Pop
+  Implement the following on the SinglyLinkedList class:
+
+  pop
+
+  This function should remove a node at the end of the SinglyLinkedList. It should return the node removed.
+
+  Examples
+
+  SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
+  singlyLinkedList.push(5);
+  singlyLinkedList.push(10);
+
+  singlyLinkedList.pop().value // 10
+  singlyLinkedList.tail.value  // 5
+  singlyLinkedList.size;   // 1
+  singlyLinkedList.pop().value; // 5
+  singlyLinkedList.size;   // 0
+  singlyLinkedList.pop()   // The SLL does not exist
+
+6)Singly Linked List - Insert
+  Implement the following on the SinglyLinkedList class:
+
+  Insert
+
+  This function should insert a node at a specified index in a  SinglyLinkedList. It should return true if the index is valid, and false if the index is invalid (less than 0 or greater the length of the list).
+
+  Examples
+
+  (Note: you do not need to re-implement push, the test will be provided with it)
+
+  SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
+  singlyLinkedList.push(5);  // Success
+  singlyLinkedList.push(10);  // Success
+  singlyLinkedList.push(15);  // Success
+  singlyLinkedList.push(20);  // Success
+
+  singlyLinkedList.insert(12, 2);  // True
+  singlyLinkedList.insert(13, 100); // False
+  singlyLinkedList.size;         // 5
+  singlyLinkedList.head.value;      // 5
+  singlyLinkedList.head.next.value;   // 10
+  singlyLinkedList.head.next.next.value;  // 12
+
+7)Singly Linked List - Get
+  Implement the following on the SinglyLinkedList class:
+
+  get
+
+  This function should find a node at a specified index in a  SinglyLinkedList. It should return the found node.
+
+  Examples
+
+  singlyLinkedList = SinglyLinkedList();
+  singlyLinkedList.push(5);  // Success
+  singlyLinkedList.push(10);  // Success
+  singlyLinkedList.push(15);  // Success
+  singlyLinkedList.push(20);  // Success
+
+  singlyLinkedList.get(0).value;    // 5
+  singlyLinkedList.get(1).value;    // 10
+  singlyLinkedList.get(2).value;   // 15
+  singlyLinkedList.get(3).value;    // 20
+  singlyLinkedList.get(4).value;    // Null
+
+8)Singly Linked List - Rotate
+  Implement the following on the SinglyLinkedList class:
+
+  Rotate
+
+  This function should rotate all the nodes in the list by some number passed in. For instance, if your list looks like 1 -> 2 -> 3 -> 4 -> 5 and you rotate by 2, the list should be modified to 3 -> 4 -> 5 -> 1 -> 2. The number passed in  to rotate can be any integer.
+
+  Time Complexity : O(N), where N is the length of the list.
+
+  Space Complexity : O(1)
+
+  Examples
+
+  (Note: you do not need to re-implement push, the test will be provided with it)
+
+  singlyLinkedList = SinglyLinkedList()
+  singlyLinkedList.push(5)  // Success
+  singlyLinkedList.push(10)  // Success
+  singlyLinkedList.push(15)  // Success
+  singlyLinkedList.push(20)  // Success
+  singlyLinkedList.push(25)  // Success
+
+  singlyLinkedList.rotate(3)
+
+  singlyLinkedList.head.value  // 20
+  singlyLinkedList.head.next.value   // 25
+  singlyLinkedList.head.next.next.value  // 5
+  singlyLinkedList.head.next.next.next.value // 10
+  singlyLinkedList.head.next.next.next.next.value // 15
+  singlyLinkedList.tail.value // 15
+
+9)Singly Linked List - Set
+  Implement the following on the SinglyLinkedList class:
+
+  Set
+
+  This function should accept an index and a value and update the value of the node in the SinglyLinkedList at the index with new value. It should return true if the node is updated successfully or false if an invalid index is passed in.
+
+  Examples
+
+  (Note: you do not need to re-implement push, the test will be provided with it)
+
+  SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
+  singlyLinkedList.push(1);
+  singlyLinkedList.push(2);
+
+  singlyLinkedList.set(0,10);  // True
+  singlyLinkedList.set(1,20);  // True
+  singlyLinkedList.head.value;  // 10
+  singlyLinkedList.head.next.val // 20
+
+10)Singly Linked List - Remove
+   Implement a function on the SinglyLinkedList class which should remove a node at a specified index in a SinglyLinkedList. If the index is valid it should return the removed node otherwise it should return null.
+
+   Example
+
+   SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
+   singlyLinkedList.push(5);  // Success
+   singlyLinkedList.push(10);  // Success
+   singlyLinkedList.push(15);  // Success
+   singlyLinkedList.push(20);  // Success
+   singlyLinkedList.push(25)  // Success
+   singlyLinkedList.remove(2).value // 15
+   singlyLinkedList.remove(100) // null
+   singlyLinkedList.sizesinglyLinkedList.remove(2).value   // 4
+   singlyLinkedList.head.value   // 5
+   singlyLinkedList.head.next.value  // 10
+   singlyLinkedList.head.next.next.value  // 20
+
+
+
