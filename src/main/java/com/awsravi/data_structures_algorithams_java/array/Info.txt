@@ -68,4 +68,48 @@ Output: 2
   Input: nums = [3,2,4], target = 6
   Output: [1,2]
 
-9)
+9)Finding a Number in an Array
+  Write a program to to check if an array contains a number in Java.
+
+  int[] intArray = {1,2,3,4,5,6};
+  searchInArray(intArray, 6); // 5
+
+10)Max Product of Two Integers
+   How to find maximum product of two integers in the array where all elements are positive.
+
+   Example
+
+   int[] intArray = {10,20,30,40,50};
+   maxProduct(intArray) // (40,50)
+
+11)IsUnique / Contains Duplicate - LeetCode 217
+   Write a program to check if an array is unique or not.
+
+   Example
+
+   int[] intArray = {1,2,3,4,5,6};
+   isUnique(intArray) // true
+
+12)Permutation
+   Your are given two integer arrays. Write a program to check if they are permutation of each other.
+
+   Example
+
+   int[] array1 = {1,2,3,4,5};
+   int[] array2 = {5,1,2,3,4};
+   permutation(array1, array2)
+   Output
+
+   true
+
+13)Rotate Matrix
+   Given an image represented by an NxN matrix write a method to rotate the image by 90 degrees.
+
+   You have to rotate the image in-place, which means you have to modify the input 2D matrix directly.
+
+   DO NOT allocate another 2D matrix and do the rotation.
+   input:123456789
+   output:741852962
+
+14)RotateMatrix/image Ex-LeetCode48
+
