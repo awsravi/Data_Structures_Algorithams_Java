@@ -1,6 +1,6 @@
 package com.awsravi.data_structures_algorithams_java.linkedlist.singlelinkedlist;
 
-public class Test {
+public class Test1 {
     public static void main(String[] args) {
 
         SingleLinkedList sLL = new SingleLinkedList();
